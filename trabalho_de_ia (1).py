@@ -59,7 +59,8 @@ def inverterCidades(cidadesCopia, x, y):
 
 #Gera uma ordem aleatória das cidades para 
 #ser usada como ponto de partida em um algoritmo
-#qtdCidades é um int, precisa que seja retornado len(listaDeCidades) para ele
+#qtdCidades é um int, precisa que seja passado um len(listaDeCidades) 
+#como parametro
 def organizacaoRandomica(qtdCidades):
     lista = list(range(qtdCidades))
     random.shuffle(lista)
