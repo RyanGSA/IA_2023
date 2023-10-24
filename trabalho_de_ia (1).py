@@ -8,6 +8,7 @@ Original file is located at
 """
 
 import math
+import random
 
 xCoords = []
 yCoords = []
@@ -58,6 +59,7 @@ def inverterCidades(cidadesCopia, x, y):
 
 #Gera uma ordem aleatória das cidades para 
 #ser usada como ponto de partida em um algoritmo
+#qtdCidades é um int, precisa que seja retornado len(listaDeCidades) para ele
 def organizacaoRandomica(qtdCidades):
     lista = list(range(qtdCidades))
     random.shuffle(lista)
