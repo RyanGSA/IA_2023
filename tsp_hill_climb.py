@@ -1,5 +1,6 @@
 import math
 import random
+
 from Cidades import getCidades
 
 # Calcular distancia entre duas cidades.
