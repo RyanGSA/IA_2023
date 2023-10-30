@@ -33,7 +33,9 @@ def getVizinhos(circuito):
 def circuito_inicial(cidades):
     circuito = list(range(len(cidades)))
     random.shuffle(circuito)
-    print("cir inicial: ", circuito)
+    print("Circuito Inicial")
+    for i in range(len(circuito)):
+      print(str(cidades[circuito[i]].nome) + " " + "X: " + str(cidades[circuito[i]].xCoord) + " " + "Y: " + str(cidades[circuito[i]].yCoord))
     return circuito
 
 # Algoritmo subida da encosta
@@ -59,5 +61,10 @@ if __name__ == "__main__":
 
   melhor_circuito, melhor_custo = subida_encosta(cidades)
 
-  print("Melhor circuito:", melhor_circuito)
+  print()
+  print("Melhor circuito:")
+  for i in range(len(melhor_circuito)):
+      print(str(cidades[melhor_circuito[i]].nome) + " " + "X: " + str(cidades[melhor_circuito[i]].xCoord) + " " + "Y: " + str(cidades[melhor_circuito[i]].yCoord))
+  print()
   print("Custo:", melhor_custo)
+  
